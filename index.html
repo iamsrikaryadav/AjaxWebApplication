@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="uft-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Srikar Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    .divider {
+        display: flex;
+        }
+        .text-info{
+            color: yellow;
+        }
+        .gradient {
+        text-align: center;
+        align-items: stretch;
+        margin: 1em 0;
+        height: 2em;
+        line-height: 2em;
+        color: white;
+        background: #6ff542
+        }
+        body{
+          background-image: url("img/background.jpg");
+          background-repeat: repeat;
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+          padding-top: 50px;
+        }
+        
+       .jumbotron{
+          background-image: url("https://cdn.pixabay.com/photo/2017/02/15/11/05/texture-2068283_1280.jpg");
+          background-repeat: no-repeat, repeat;
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+          padding-top: 50px;
+          font-weight: bold;
+          width: 50%;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          padding: 00px;
+          border-radius: 50px;
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    </style>
+</head>
+
+<body>
+<center>
+
+<div class="jumbotron">
+<br>
+<div class="timer">Time left : <span id="time">02:00</span> minutes!</div>
+    <div id="container">
+        
+
+        <header>
+            <h2>Socrative Quiz</h2>
+        </header>
+
+
+        <div id="content">
+
+            <p>Start Your Quiz</p>
+
+            <div id="alert">Error!</div>
+
+            <div id="quiz">
+                <form id="myForm" action="" method="post">
+                    <div id="form-question">
+                        Lorem 
+                    </div>
+                    <div id="form-answers">
+                        <input type="radio" class="form-check-input" name="answer1" id="Name" value="Laurence"> Laurence
+                    </div>
+                </form>
+            </div>
+
+            <div id="nextButton" type="button" class="btn btn-outline-success">Next</div>
+
+        </div>
+
+        <footer></footer>
+
+    </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="quiz.js"></script>
+<br><br>
+</div>
+</center>
+</body>
+
+</html>

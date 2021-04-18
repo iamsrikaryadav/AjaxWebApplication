@@ -1,0 +1,66 @@
+body {
+    font-size: 18px;
+}
+
+p {
+    margin: 0;
+}
+h1{
+    background-color: #3e9ebb;
+    text-align: center;
+}
+
+header {
+    background: #3e9ebb;
+    color: white;
+    text-align: center;
+    width:50%;
+    margin: 0;
+}
+
+header h2 {
+    margin: 0px;
+    padding: 10px;
+}
+
+#container {
+    max-width: 800px;
+    margin: 30px auto;
+    margin-top: 8%;
+    border: 1px solid #ccc;
+    /* background: #fff; */
+}
+
+#content {
+    padding: 30px;
+}
+
+#alert {
+    margin-bottom: 20px;
+    color: #3e9ebb;
+}
+
+.btn {
+    margin: 25px auto 0 auto;
+    background: #3e9ebb;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 100px;
+    border: 1px solid #ccc;
+}
+
+.form-radio {
+    margin: 5px 20px;
+}
+
+
+
+.score {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+
