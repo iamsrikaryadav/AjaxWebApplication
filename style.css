@@ -17,9 +17,16 @@ input[type=radio] {
 p {
     font-family:'Gabriola', serif;
 }
+body{
+    background-image: url("img/background.jpg");
+    background-repeat: repeat;
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding-top: 50px;
+  }
 /* Quiz Classes */
  .quizContainer {
-    background-color: white;
+    background-image: url("img/questionbackground.jpg");
     border-radius: 6px;
     width: 75%;
     margin: auto;
@@ -40,9 +47,9 @@ font-family:"Georgia", Arial, sans-serif;
    /* width: 150px;*/
     height: 40px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: rgb(22, 6, 235);
     /*clear: both;*/
-    color: red;
+    color: rgb(223, 223, 223);
     font-family:'Gabriola', serif;
     position: relative;
     margin: auto;
@@ -50,27 +57,54 @@ font-family:"Georgia", Arial, sans-serif;
 	font-weight:bold;
     padding-top: 5px;
 	float:right;
-	right:30%;
+	right:10%;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+.nextButton:hover span {
+    padding-right: 25px;
+  }
+.nextButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
 
 .preButton {
     box-shadow: 3px 3px 5px #888;
-    border-radius: 6px;
+    border-radius: 4px;
     /*width: 150px;*/
     height: 40px;
     text-align: center;
-    background-color: lightgrey;
+    background-color: rgb(240, 13, 13);
     /*clear: both;*/
-    color: red;
+    color: rgb(255, 255, 255);
     font-family:'Gabriola', serif;
     position: relative;
-    margin: auto;
+    cursor: pointer;
+    margin: 5px;
 	font-size:25px;
 	font-weight:bold;
     padding-top: 5px;
+    transition: all 0.5s;
 	float:left;
-	left:30%;
+	left:10%;
+    animation: glow 1s ease-in-out infinite alternate;
 }
+.preButton:hover span {
+    padding-left: 25px;
+  }
+.preButton:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f1ee0d, 0 0 40px #f1ee0d, 0 0 50px #f1ee0d, 0 0 60px #f1ee0d, 0 0 70px #f1ee0d;
+    }
+    
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 30px #13495f, 0 0 40px #13495f, 0 0 50px #13495f, 0 0 60px #13495f, 0 0 70px #13495f, 0 0 80px #13495f;
+    }
+  }
 
 .question {
     font-family:'Century', serif;
@@ -80,7 +114,7 @@ font-family:"Georgia", Arial, sans-serif;
     height: auto;
     margin: auto;
     border-radius: 6px;
-    background-color: #f3dc45;
+    background-color: #3E9EBB;
     text-align: center;
 }
 .quizMessage {
@@ -100,8 +134,8 @@ font-family:"Georgia", Arial, sans-serif;
 }
 .choiceList {
     font-family: 'Arial', serif;
-    color: #ed12cd;
-	font-size:15px;
+    color: #0c010a;
+	font-size:13px;
 	font-weight:bold;
 }
 .result {
@@ -116,7 +150,7 @@ font-family:"Georgia", Arial, sans-serif;
     font-family:'Verdana', serif;
 	font-weight:bold;
 	position:absolute;
-	top:80%;
+	top:100%;
 	left:30%;
 }
 /* End of Quiz Classes */
